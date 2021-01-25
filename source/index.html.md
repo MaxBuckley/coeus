@@ -8,8 +8,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - <a href='www.payitgov.com'>PayIt</a>
 
 includes:
   - errors
@@ -21,12 +20,13 @@ code_clipboard: true
 
 # Introduction
 
-Welcome to the Coeus API! You can use our API to access endpoints vital to your, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the ChunkyBorgar API! You can use our API and documentation to help you be successful for this exercise.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+The goal of this exercise is to provide some exposure to some processes we have here at PayIt and also simplified versions of some of the problems we have or may have to solve.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+# Getting Started
 
+The goal of this exercise is to 
 # Authentication
 
 > To authorize, use this code:
