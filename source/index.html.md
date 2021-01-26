@@ -22,11 +22,14 @@ code_clipboard: true
 
 Welcome to the ChunkyBorgar API! You can use our API and documentation to help you be successful for this exercise.
 
-The goal of this exercise is to provide some exposure to some processes we have here at PayIt and also simplified versions of some of the problems we have or may have to solve.
+The goal of this exercise is to provide some exposure to some processes we have here at PayIt and also simplified versions of some of the problems have to solve.
 
-# Getting Started
+# Exercise
 
-The goal of this exercise is to 
+A ChonkyBorgar order has been placed however the payment failed and will need to be resubmitting using this API, however it's not entirely finished yet and some additions may need to be made.
+
+## 1
+An order was placed on 02/02/2020 at 09:16 PM Central Standard Time. Funds were never collected for the order, so we're needing look up the order and submit a transaction.
 # Authentication
 
 > To authorize, use this code:
@@ -55,34 +58,12 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Orders
 
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+## Get All Orders
 
 ```shell
-curl "http://example.com/api/kittens" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+curl "http://maxbuckley.github.io/oreus/orders"
 ```
 
 > The above command returns JSON structured like this:
@@ -91,26 +72,25 @@ let kittens = api.kittens.get();
 [
   {
     "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
+    "name": "ChonkyBurger",
+    "price": "7.35",
+    "customerId": 84210,
+    "placedAt": 1580687876000
   },
   {
     "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
+    "name": "VegemiteBurger",
+    "price": "6.95",
+    "customerId": 1580695076000
   }
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all orders.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://maxbuckley.github.io/oreus/orders`
 
 ### Query Parameters
 
@@ -123,59 +103,37 @@ available | true | If set to false, the result will include kittens that have al
 Remember — a happy kitten is an authenticated kitten!
 </aside>
 
-## Get a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+## Get a Specific Order by Timestamp
 
 ```shell
-curl "http://example.com/api/kittens/2" \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
+curl "http://maxbuckley.github.io/oreus/orders/{timeStamp}"
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+  "id": 1,
+  "name": "ChonkyBurger",
+  "price": "7.35",
+  "customerId": 84210,
+  "placedAt": 1580687876000
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves a specific order.
 
 <aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`GET http://maxbuckley.github.io/oreus/orders/{timeStamp}"`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the kitten to retrieve
+Timestamp | The timestamp of the order in GMT epoch milliseconds
 
 ## Delete a Specific Kitten
 
