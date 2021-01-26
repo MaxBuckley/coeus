@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "ChonkyBurger",
+      "price": "7.35",
+      "customerId": 84210,
+      "placedAt": 1580687876000
+    },
+    {
+      "id": 2,
+      "name": "VegemiteBurger",
+      "price": "6.95",
+      "customerId": 34114,
+      "placedAt": 1580695076000
+    },
+    {
+      "id": 3,
+      "name": "DoubleChonky",
+      "price": "11.95",
+      "customerId": 12443,
+      "placedAt": 1580695076020
+    }
+  ]
