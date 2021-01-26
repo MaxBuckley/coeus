@@ -3,15 +3,9 @@ title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
-  - ruby
-  - python
-  - javascript
 
 toc_footers:
   - <a href='www.payitgov.com'>PayIt</a>
-
-includes:
-  - errors
 
 search: true
 
