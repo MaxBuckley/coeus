@@ -22,5 +22,53 @@
       "customerId": 12443,
       "placedAt": 1580695076020,
       "paymentStatus": "FAILED"
+    },
+    {
+      "id": 4,
+      "name": "ChonkyBurger",
+      "price": "7.35",
+      "customerId": 64324,
+      "placedAt": 1580687876301,
+      "paymentStatus": "SUCCESS"
+    },
+    {
+      "id": 5,
+      "name": "VegemiteBurger",
+      "price": "6.95",
+      "customerId": 73242,
+      "placedAt": 1580695076002,
+      "paymentStatus": "SUCCESS"
+    },
+    {
+      "id": 6,
+      "name": "DoubleChonky",
+      "price": "11.95",
+      "customerId": 34614,
+      "placedAt": 1580695076021,
+      "paymentStatus": "SUCCESS"
+    },
+    {
+      "id": 7,
+      "name": "ChonkyBurger",
+      "price": "7.35",
+      "customerId": 64316,
+      "placedAt": 1580687876041,
+      "paymentStatus": "SUCCESS"
+    },
+    {
+      "id": 8,
+      "name": "VegemiteBurger",
+      "price": "6.95",
+      "customerId": 73413,
+      "placedAt": 1580695076011,
+      "paymentStatus": "SUCCESS"
+    },
+    {
+      "id": 9,
+      "name": "VegemiteBurger",
+      "price": "6.95",
+      "customerId": 55132,
+      "placedAt": 1580695076029,
+      "paymentStatus": "FAILED"
     }
   ]

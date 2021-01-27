@@ -1,0 +1,15 @@
+{
+    "id": 9,
+    "name": "ChonkyBurger",
+    "price": "7.35",
+    "customerId": 84210,
+    "placedAt": 1580687876000,
+    "paymentMethodType": "CREDIT_CARD",
+    "paymentAccountId": 32802,
+    "paymentStatus": "SUCCESS",
+    "storeLocation": {
+        "city": "Kansas City",
+        "state": "MO",
+        "postalCode": "64108"
+    }
+}

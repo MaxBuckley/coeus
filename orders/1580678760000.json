@@ -1,12 +1,12 @@
 {
     "id": 1,
-    "name": "ChonkyBurger",
-    "price": "7.35",
+    "name": "ChonkyBurger Deluxe",
+    "price": "10.10",
     "customerId": 84210,
     "placedAt": 1580678760000,
-    "paymentMethodType": "CREDIT_CARD",
+    "paymentMethodType": "ACH",
     "paymentAccountId": 128408,
-    "paymentStatus": "PENDING",
+    "paymentStatus": "FAILED",
     "storeLocation": {
         "city": "Kansas City",
         "state": "MO",
