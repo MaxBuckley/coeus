@@ -16,15 +16,6 @@ code_clipboard: true
 
 Welcome to the ChunkyBorgar API! You can use our API and documentation to help you be successful for this exercise.
 
-The goal of this exercise is to provide some exposure to some processes we have here at PayIt and also simplified versions of some of the problems have to solve.
-
-# Exercise
-
-A ChonkyBorgar order has been placed however the payment failed and will need to be resubmitting using this API, however it's not entirely finished yet and some additions may need to be made.
-
-## Step 1:
-An order was placed on 02/02/2020 at 09:16:00 PM Central Standard Time but funds were not collected for the order. We're needing look up the order and submit a transaction to collect funds. To submit the transaction we're needing the `paymentAccountId`, use the documentation below and make the appropriate `curl` request. 
-
 # Orders
 
 ## Get All Orders
@@ -77,7 +68,7 @@ curl "https://raw.githubusercontent.com/MaxBuckley/coeus/api/orders/158068787600
     "placedAt": 1580687876000,
     "paymentMethodType": "CREDIT_CARD",
     "paymentAccountId": 128408,
-    "paymentStatus": "PENDING",
+    "paymentStatus": "SUCCESS",
     "storeLocation": {
         "city": "Kansas City",
         "state": "MO",
